@@ -25,6 +25,10 @@ public class URLRedirectionController {
         if (match == null) {
             return ResponseEntity.notFound().build(); // 404
         }
+
+        //TODO: Increment the click count async
+        //TODO: Move the logic to Service class
+
         return ResponseEntity.status(HttpStatus.FOUND)  // 302
                 .header("Location", match.getLongURL())
                 .build();
