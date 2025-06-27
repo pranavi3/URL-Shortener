@@ -1,6 +1,0 @@
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/urlencoding
-    username: root
-    password: Pranavi@2001
-    driver-class-name: com.mysql.cj.jdbc.Driver
